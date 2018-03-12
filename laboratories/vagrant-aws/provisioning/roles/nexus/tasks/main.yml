@@ -1,0 +1,11 @@
+---
+
+- name: run nexus docker container
+  docker_container:
+    name: nexus-container
+    image: sonatype/nexus
+    ports:
+      - "8081:8081"
+    env:
+      JAVA_MAX_MEM: 768m
+      EXTRA_JAVA_OPTS: "-Dstorage.diskCache.bufferSize=256"

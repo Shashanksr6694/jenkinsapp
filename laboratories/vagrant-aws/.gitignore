@@ -1,0 +1,8 @@
+.vagrant/
+**/ansible-roles/**
+**/*.retry
+
+geerlingguy.*/
+williamyeh.*
+ansible-roles
+*.retry
